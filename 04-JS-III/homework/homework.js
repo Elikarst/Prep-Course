@@ -3,18 +3,30 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+
+  var shift = array.shift()
+  return shift;
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+var valor = array.pop()
+return valor;
+
+
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+var longitud = array.length;
+return longitud;
+
+
+
 }
 
 
@@ -23,6 +35,13 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+ var nvoarray = [];
+ for (var i = 0; i < array.length; i++){
+  var suma = array[i] + 1;
+  nvoarray.push(suma)
+ } return nvoarray;
+
+
 }
 
 
@@ -30,6 +49,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  array.push(elemento)
+  return array;
 }
 
 
@@ -38,6 +59,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento)
+  return array;
 }
 
 
@@ -47,6 +70,9 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  var string = palabras.join(" ")
+  return string;
+  
 }
 
 
@@ -54,6 +80,11 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for (var i = 0; i < array.length; i++)
+  {if ( array[i]===elemento) {
+    return true; 
+  }
+  } return false
 }
 
 
@@ -61,6 +92,8 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+
+
 }
 
 
@@ -88,6 +121,7 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+  
 
 }
 
